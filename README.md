@@ -2,7 +2,6 @@
 
 <div align="center">
 
-<img src="docs/assets/logo.png" alt="BizPilot AI Logo" width="180"/>
 
 ### **The AI Business Operating System for African SMEs**
 
