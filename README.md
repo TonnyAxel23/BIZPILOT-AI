@@ -1,3 +1,6 @@
+# BizPilot AI - README.md
+
+```markdown
 # 🚀 BizPilot AI
 
 ### Your AI Business Consultant for African SMEs
@@ -117,94 +120,99 @@ BizPilot AI combines:
 
 ### Frontend
 
+```
 ┌─────────────────────────────────────────────────────┐
-│ FRONTEND │
+│                    FRONTEND                         │
 ├─────────────────────────────────────────────────────┤
-│ React 18 - UI Framework │
-│ TypeScript - Type Safety │
-│ Tailwind CSS - Styling │
-│ ShadCN UI - Component Library │
-│ Framer Motion - Animations │
-│ Recharts - Data Visualization │
-│ React Hook Form - Form Management │
-│ Zod - Validation │
-│ TanStack Query - Data Fetching │
-│ Axios - HTTP Client │
+│  React 18              - UI Framework               │
+│  TypeScript            - Type Safety                │
+│  Tailwind CSS          - Styling                    │
+│  ShadCN UI             - Component Library          │
+│  Framer Motion         - Animations                 │
+│  Recharts              - Data Visualization         │
+│  React Hook Form       - Form Management            │
+│  Zod                   - Validation                 │
+│  TanStack Query        - Data Fetching              │
+│  Axios                 - HTTP Client                │
 └─────────────────────────────────────────────────────┘
-
-
+```
 
 ### Backend
-┌─────────────────────────────────────────────────────┐
-│ BACKEND │
-├─────────────────────────────────────────────────────┤
-│ Node.js - Runtime │
-│ Express.js - Web Framework │
-│ PostgreSQL - Database │
-│ Prisma - ORM │
-│ JWT - Authentication │
-│ bcrypt - Password Hashing │
-│ OpenAI API - AI Integration │
-│ Cloudinary - File Storage │
-│ Redis - Caching │
-│ Bull - Queue Management │
-└─────────────────────────────────────────────────────┘
 
+```
+┌─────────────────────────────────────────────────────┐
+│                    BACKEND                          │
+├─────────────────────────────────────────────────────┤
+│  Node.js              - Runtime                     │
+│  Express.js           - Web Framework               │
+│  PostgreSQL           - Database                    │
+│  Prisma               - ORM                         │
+│  JWT                  - Authentication              │
+│  bcrypt               - Password Hashing            │
+│  OpenAI API           - AI Integration              │
+│  Cloudinary           - File Storage                │
+│  Redis                - Caching                     │
+│  Bull                 - Queue Management            │
+└─────────────────────────────────────────────────────┘
+```
 
 ### DevOps
-┌─────────────────────────────────────────────────────┐
-│ DEVOPS │
-├─────────────────────────────────────────────────────┤
-│ Docker - Containerization │
-│ Docker Compose - Multi-container orchestration│
-│ Nginx - Web Server │
-│ GitHub Actions - CI/CD │
-│ VPS (DigitalOcean) - Hosting │
-│ PM2 - Process Management │
-│ Let's Encrypt - SSL Certificates │
-│ Prometheus - Monitoring │
-│ Grafana - Visualization │
-└─────────────────────────────────────────────────────┘
 
+```
+┌─────────────────────────────────────────────────────┐
+│                    DEVOPS                           │
+├─────────────────────────────────────────────────────┤
+│  Docker               - Containerization            │
+│  Docker Compose       - Multi-container orchestration│
+│  Nginx                - Web Server                  │
+│  GitHub Actions       - CI/CD                      │
+│  VPS (DigitalOcean)   - Hosting                    │
+│  PM2                  - Process Management          │
+│  Let's Encrypt        - SSL Certificates            │
+│  Prometheus           - Monitoring                  │
+│  Grafana              - Visualization               │
+└─────────────────────────────────────────────────────┘
+```
 
 ---
 
 ## 🏗️ Architecture
 
 ### System Architecture Diagram
-┌─────────────────────────────────────────────────────────────┐
-│ CLIENT LAYER │
-├──────────────┬──────────────┬──────────────┬───────────────┤
-│ Web App │ Mobile App │ WhatsApp │ API │
-│ (React) │ (React Native)│ Bot │ Clients │
-└──────────────┴──────────────┴──────────────┴───────────────┘
-│
-▼
-┌─────────────────────────────────────────────────────────────┐
-│ API GATEWAY (Nginx) │
-│ Load Balancing & Routing │
-└─────────────────────────────────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────────────────────────────┐
-│ APPLICATION LAYER │
-├──────────────┬──────────────┬──────────────┬───────────────┤
-│ Auth │ Business │ AI │ Reports │
-│ Service │ Service │ Service │ Service │
-├──────────────┼──────────────┼──────────────┼───────────────┤
-│ User │ Analytics │ Forecast │ Notify │
-│ Service │ Service │ Service │ Service │
-└──────────────┴──────────────┴──────────────┴───────────────┘
-│
-▼
-┌─────────────────────────────────────────────────────────────┐
-│ DATA LAYER │
-├──────────────┬──────────────┬──────────────┬───────────────┤
-│ PostgreSQL │ Redis │ Cloudinary │ OpenAI │
-│ (Primary) │ (Cache) │ (Storage) │ (AI) │
-└──────────────┴──────────────┴──────────────┴───────────────┘
 
-text
+```
+┌─────────────────────────────────────────────────────────────┐
+│                        CLIENT LAYER                         │
+├──────────────┬──────────────┬──────────────┬───────────────┤
+│   Web App    │  Mobile App  │  WhatsApp    │    API        │
+│   (React)    │  (React Native)│  Bot       │   Clients     │
+└──────────────┴──────────────┴──────────────┴───────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    API GATEWAY (Nginx)                      │
+│                  Load Balancing & Routing                   │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    APPLICATION LAYER                        │
+├──────────────┬──────────────┬──────────────┬───────────────┤
+│   Auth       │   Business   │    AI        │   Reports     │
+│   Service    │   Service    │   Service    │   Service     │
+├──────────────┼──────────────┼──────────────┼───────────────┤
+│   User       │   Analytics  │   Forecast   │   Notify      │
+│   Service    │   Service    │   Service    │   Service     │
+└──────────────┴──────────────┴──────────────┴───────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                     DATA LAYER                              │
+├──────────────┬──────────────┬──────────────┬───────────────┤
+│  PostgreSQL  │    Redis     │  Cloudinary  │   OpenAI      │
+│  (Primary)   │   (Cache)    │  (Storage)   │   (AI)        │
+└──────────────┴──────────────┴──────────────┴───────────────┘
+```
 
 ### Database Schema (Simplified)
 
@@ -270,20 +278,23 @@ ai_conversations
 ├── response (Text)
 ├── context (JSON)
 └── ...
-🚀 Getting Started
-Prerequisites
-Node.js (v18 or higher)
+```
 
-PostgreSQL (v14 or higher)
+---
 
-npm or yarn
+## 🚀 Getting Started
 
-Git
+### Prerequisites
 
-Docker (optional, for containerization)
+- **Node.js** (v18 or higher)
+- **PostgreSQL** (v14 or higher)
+- **npm** or **yarn**
+- **Git**
+- **Docker** (optional, for containerization)
 
-Quick Start with Docker
+### Quick Start with Docker
 
+```bash
 # Clone the repository
 git clone https://github.com/yourusername/bizpilot-ai.git
 cd bizpilot-ai
@@ -299,17 +310,24 @@ docker-compose up -d
 # Backend API: http://localhost:5000
 # PostgreSQL: localhost:5432
 # Redis: localhost:6379
-Manual Installation
-1. Clone and Setup
+```
 
+### Manual Installation
+
+#### 1. Clone and Setup
+
+```bash
 # Clone the repository
 git clone https://github.com/yourusername/bizpilot-ai.git
 cd bizpilot-ai
 
 # Install dependencies for both frontend and backend
 npm run install-all
-2. Environment Setup
-bash
+```
+
+#### 2. Environment Setup
+
+```bash
 # Copy example env files
 cp .env.example .env
 
@@ -318,8 +336,11 @@ cp .env.example .env
 # JWT_SECRET=your-secret-key
 # OPENAI_API_KEY=your-openai-key
 # CLOUDINARY_URL=your-cloudinary-url
-3. Database Setup
+```
 
+#### 3. Database Setup
+
+```bash
 # Run migrations
 npx prisma migrate dev --name init
 
@@ -328,8 +349,11 @@ npx prisma db seed
 
 # Generate Prisma client
 npx prisma generate
-4. Start Development Servers
-bash
+```
+
+#### 4. Start Development Servers
+
+```bash
 # Start backend server (port 5000)
 npm run server
 
@@ -338,10 +362,15 @@ npm run client
 
 # Or run both concurrently
 npm run dev
+```
 
-💻 Development
-Project Structure
+---
 
+## 💻 Development
+
+### Project Structure
+
+```
 bizpilot-ai/
 ├── backend/
 │   ├── src/
@@ -399,9 +428,13 @@ bizpilot-ai/
 │       └── deploy.yml       # CI/CD Pipeline
 ├── README.md
 └── LICENSE
+```
 
-Backend
+### Available Scripts
 
+#### Backend
+
+```bash
 # Development
 npm run server:dev          # Start with nodemon
 
@@ -422,8 +455,11 @@ npm run test:coverage      # Run tests with coverage
 # Linting
 npm run lint               # Check linting
 npm run format             # Format code
-Frontend
-bash
+```
+
+#### Frontend
+
+```bash
 # Development
 npm start                  # Start dev server
 
@@ -437,9 +473,15 @@ npm test                   # Run tests
 # Linting
 npm run lint               # Check linting
 npm run format             # Format code
-📡 API Documentation
-Authentication Endpoints
-http
+```
+
+---
+
+## 📡 API Documentation
+
+### Authentication Endpoints
+
+```http
 POST   /api/auth/register      # Register new user
 POST   /api/auth/login         # Login user
 POST   /api/auth/verify-email  # Verify email
@@ -447,14 +489,20 @@ POST   /api/auth/forgot-password # Request password reset
 PUT    /api/auth/reset-password # Reset password
 POST   /api/auth/refresh-token # Refresh JWT token
 POST   /api/auth/logout        # Logout user
-Business Endpoints
-http
+```
+
+### Business Endpoints
+
+```http
 GET    /api/business           # Get business details
 PUT    /api/business           # Update business
 GET    /api/business/stats     # Get business statistics
 GET    /api/business/analytics # Get analytics
-Sales Endpoints
-http
+```
+
+### Sales Endpoints
+
+```http
 POST   /api/sales              # Record a sale
 GET    /api/sales              # Get all sales
 GET    /api/sales/:id          # Get sale by ID
@@ -462,8 +510,11 @@ PUT    /api/sales/:id          # Update sale
 DELETE /api/sales/:id          # Delete sale
 GET    /api/sales/report       # Generate sales report
 GET    /api/sales/analytics    # Sales analytics
-Expense Endpoints
-http
+```
+
+### Expense Endpoints
+
+```http
 POST   /api/expenses           # Record an expense
 GET    /api/expenses           # Get all expenses
 GET    /api/expenses/:id       # Get expense by ID
@@ -471,8 +522,11 @@ PUT    /api/expenses/:id       # Update expense
 DELETE /api/expenses/:id       # Delete expense
 GET    /api/expenses/categories # Get expense categories
 GET    /api/expenses/report    # Generate expense report
-Inventory Endpoints
-http
+```
+
+### Inventory Endpoints
+
+```http
 POST   /api/inventory          # Add product
 GET    /api/inventory          # Get all products
 GET    /api/inventory/:id      # Get product by ID
@@ -481,8 +535,11 @@ DELETE /api/inventory/:id      # Delete product
 PUT    /api/inventory/:id/stock # Update stock quantity
 GET    /api/inventory/low-stock # Get low stock products
 GET    /api/inventory/analytics # Inventory analytics
-Customer Endpoints
-http
+```
+
+### Customer Endpoints
+
+```http
 POST   /api/customers          # Add customer
 GET    /api/customers          # Get all customers
 GET    /api/customers/:id      # Get customer by ID
@@ -490,20 +547,30 @@ PUT    /api/customers/:id      # Update customer
 DELETE /api/customers/:id      # Delete customer
 GET    /api/customers/:id/history # Get customer purchase history
 GET    /api/customers/analytics # Customer analytics
-AI Assistant Endpoints
-http
+```
+
+### AI Assistant Endpoints
+
+```http
 POST   /api/ai/ask             # Ask AI a question
 POST   /api/ai/analyze-sales   # AI sales analysis
 POST   /api/ai/recommendations # Get AI recommendations
 POST   /api/ai/business-plan   # Generate business plan
 POST   /api/ai/forecast        # Generate financial forecast
 GET    /api/ai/conversations   # Get AI conversation history
-Full API Documentation
-For complete API documentation, see the API Docs or visit the Swagger UI at /api-docs when running the server.
+```
 
-🚢 Deployment
-Deploy with Docker
+### Full API Documentation
 
+For complete API documentation, see the [API Docs](docs/API.md) or visit the Swagger UI at `/api-docs` when running the server.
+
+---
+
+## 🚢 Deployment
+
+### Deploy with Docker
+
+```bash
 # Build images
 docker-compose build
 
@@ -512,8 +579,11 @@ docker-compose -f docker-compose.prod.yml up -d
 
 # Check logs
 docker-compose logs -f
-Deploy to VPS (DigitalOcean)
-bash
+```
+
+### Deploy to VPS (DigitalOcean)
+
+```bash
 # 1. Set up server
 ssh root@your-server-ip
 apt update && apt upgrade -y
@@ -535,10 +605,13 @@ docker-compose -f docker-compose.prod.yml up -d
 
 # 6. Set up Nginx SSL
 certbot --nginx -d yourdomain.com
-Deploy with GitHub Actions (CI/CD)
+```
+
+### Deploy with GitHub Actions (CI/CD)
+
 The project includes a GitHub Actions workflow for automated deployment:
 
-yaml
+```yaml
 # .github/workflows/deploy.yml
 name: Deploy to Production
 
@@ -563,9 +636,15 @@ jobs:
             docker-compose -f docker-compose.prod.yml down
             docker-compose -f docker-compose.prod.yml pull
             docker-compose -f docker-compose.prod.yml up -d
-🧪 Testing
-Running Tests
-bash
+```
+
+---
+
+## 🧪 Testing
+
+### Running Tests
+
+```bash
 # Backend tests
 cd backend
 npm test
@@ -576,194 +655,170 @@ npm test
 
 # End-to-end tests
 npm run test:e2e
-Test Coverage
+```
+
+### Test Coverage
+
 We aim for >80% test coverage across all critical paths.
 
-
+```bash
 # Generate coverage report
 npm run test:coverage
 
 # View coverage report
 open coverage/lcov-report/index.html
-🤝 Contributing
-We welcome contributions! Please see our Contributing Guidelines.
-
-Development Workflow
-Fork the repository
-
-Create your feature branch (git checkout -b feature/AmazingFeature)
-
-Commit your changes (git commit -m 'Add some AmazingFeature')
-
-Push to the branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-Code Style
-Frontend: ESLint + Prettier with Airbnb style guide
-
-Backend: ESLint + Prettier with StandardJS
-
-Commit Messages: Conventional Commits
-
-📊 Performance Optimization
-Frontend Optimization
-✅ Lazy loading for routes
-
-✅ Code splitting
-
-✅ Image optimization
-
-✅ Caching strategies
-
-✅ PWA support
-
-✅ Bundle size optimization (< 300KB initial load)
-
-Backend Optimization
-✅ Database indexing
-
-✅ Query optimization
-
-✅ Redis caching
-
-✅ Rate limiting
-
-✅ Compression
-
-✅ Connection pooling
-
-🔒 Security Features
-✅ JWT Authentication with refresh tokens
-
-✅ Password hashing with bcrypt
-
-✅ Input validation with Zod
-
-✅ XSS protection
-
-✅ CSRF protection
-
-✅ Rate limiting
-
-✅ SQL injection prevention (Prisma)
-
-✅ Secure session management
-
-✅ HTTPS enforcement
-
-✅ Regular security audits
-
-✅ Audit logging
-
-✅ Data encryption at rest
-
-📈 Monitoring & Analytics
-Implemented Monitoring
-Application Performance: PM2 + Keymetrics
-
-Database Performance: PostgreSQL monitoring
-
-Server Health: Prometheus + Grafana
-
-Error Tracking: Sentry
-
-User Analytics: Mixpanel/PostHog
-
-Performance: Lighthouse CI
-
-💰 Business Model
-Plan	Price	Key Features
-Free	$0	Basic features, 50 transactions/month, 10 AI queries
-Starter	$19/mo	3 users, 1000 transactions, 100 AI queries
-Growth	$49/mo	10 users, 10,000 transactions, 500 AI queries
-Enterprise	Custom	Unlimited everything, custom AI, dedicated support
-🙏 Acknowledgments
-OpenAI for GPT API
-
-Vercel for inspiration
-
-ShadCN for beautiful UI components
-
-The African tech community for the vision
-
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-📞 Contact & Support
-Website: bizpilot.ai
-
-Email: support@bizpilot.ai
-
-Twitter: @BizPilotAI
-
-Discord: Join our community
-
-Documentation: docs.bizpilot.ai
-
-🌟 Star History
-https://api.star-history.com/svg?repos=yourusername/bizpilot-ai&type=Date
-
-🏆 Roadmap
-Q1 2026 (MVP Launch)
-Core business management features
-
-AI Consultant integration
-
-Dashboard and analytics
-
-Initial launch in Kenya
-
-Q2 2026 (Growth)
-Mobile App (React Native)
-
-WhatsApp integration
-
-Swahili language support
-
-Nigeria expansion
-
-Q3 2026 (Scale)
-Multi-tenancy
-
-API marketplace
-
-Accounting integrations
-
-South Africa expansion
-
-Q4 2026 (Enterprise)
-Advanced AI features
-
-Banking integrations
-
-White-label solutions
-
-Pan-African expansion
-
-Made with ❤️ for African SMEs
-
-https://img.shields.io/twitter/follow/BizPilotAI?style=social
-https://img.shields.io/badge/Discord-Join-7289DA
-https://img.shields.io/badge/Docs-Read-00A3FF
-
+```
 
 ---
 
-## 📝 Next Steps
+## 🤝 Contributing
 
-Now that we have:
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md).
 
-1. ✅ **Phase 1**: PRD Complete
-2. ✅ **README.md**: Complete Project Documentation
+### Development Workflow
 
-We're ready to proceed to **Phase 2: System Architecture** where we'll design:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-- Detailed system architecture diagrams
-- Data flow diagrams
-- API design specifications
-- Security architecture
-- Scalability strategy
-- Disaster recovery plan
+### Code Style
 
-**Question**: Are you ready to proceed to Phase 2, or would you like to make any adjustments to the PRD or README first?
+- **Frontend**: ESLint + Prettier with Airbnb style guide
+- **Backend**: ESLint + Prettier with StandardJS
+- **Commit Messages**: Conventional Commits
+
+---
+
+## 📊 Performance Optimization
+
+### Frontend Optimization
+
+- ✅ Lazy loading for routes
+- ✅ Code splitting
+- ✅ Image optimization
+- ✅ Caching strategies
+- ✅ PWA support
+- ✅ Bundle size optimization (< 300KB initial load)
+
+### Backend Optimization
+
+- ✅ Database indexing
+- ✅ Query optimization
+- ✅ Redis caching
+- ✅ Rate limiting
+- ✅ Compression
+- ✅ Connection pooling
+
+---
+
+## 🔒 Security Features
+
+- ✅ JWT Authentication with refresh tokens
+- ✅ Password hashing with bcrypt
+- ✅ Input validation with Zod
+- ✅ XSS protection
+- ✅ CSRF protection
+- ✅ Rate limiting
+- ✅ SQL injection prevention (Prisma)
+- ✅ Secure session management
+- ✅ HTTPS enforcement
+- ✅ Regular security audits
+- ✅ Audit logging
+- ✅ Data encryption at rest
+
+---
+
+## 📈 Monitoring & Analytics
+
+### Implemented Monitoring
+
+- **Application Performance**: PM2 + Keymetrics
+- **Database Performance**: PostgreSQL monitoring
+- **Server Health**: Prometheus + Grafana
+- **Error Tracking**: Sentry
+- **User Analytics**: Mixpanel/PostHog
+- **Performance**: Lighthouse CI
+
+---
+
+## 💰 Business Model
+
+| Plan | Price | Key Features |
+|------|-------|--------------|
+| **Free** | $0 | Basic features, 50 transactions/month, 10 AI queries |
+| **Starter** | $19/mo | 3 users, 1000 transactions, 100 AI queries |
+| **Growth** | $49/mo | 10 users, 10,000 transactions, 500 AI queries |
+| **Enterprise** | Custom | Unlimited everything, custom AI, dedicated support |
+
+---
+
+## 🙏 Acknowledgments
+
+- [OpenAI](https://openai.com) for GPT API
+- [Vercel](https://vercel.com) for inspiration
+- [ShadCN](https://ui.shadcn.com) for beautiful UI components
+- The African tech community for the vision
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📞 Contact & Support
+
+- **Website**: [bizpilot.ai](https://bizpilot.ai)
+- **Email**: support@bizpilot.ai
+- **Twitter**: [@BizPilotAI](https://twitter.com/BizPilotAI)
+- **Discord**: [Join our community](https://discord.gg/bizpilot)
+- **Documentation**: [docs.bizpilot.ai](https://docs.bizpilot.ai)
+
+---
+
+## 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/bizpilot-ai&type=Date)](https://star-history.com/#yourusername/bizpilot-ai&Date)
+
+---
+
+## 🏆 Roadmap
+
+### Q1 2026 (MVP Launch)
+- [x] Core business management features
+- [x] AI Consultant integration
+- [x] Dashboard and analytics
+- [x] Initial launch in Kenya
+
+### Q2 2026 (Growth)
+- [ ] Mobile App (React Native)
+- [ ] WhatsApp integration
+- [ ] Swahili language support
+- [ ] Nigeria expansion
+
+### Q3 2026 (Scale)
+- [ ] Multi-tenancy
+- [ ] API marketplace
+- [ ] Accounting integrations
+- [ ] South Africa expansion
+
+### Q4 2026 (Enterprise)
+- [ ] Advanced AI features
+- [ ] Banking integrations
+- [ ] White-label solutions
+- [ ] Pan-African expansion
+
+---
+
+**Made with ❤️ for African SMEs**
+
+[![Follow us on Twitter](https://img.shields.io/twitter/follow/BizPilotAI?style=social)](https://twitter.com/BizPilotAI)
+[![Join Discord](https://img.shields.io/badge/Discord-Join-7289DA)](https://discord.gg/bizpilot)
+[![Documentation](https://img.shields.io/badge/Docs-Read-00A3FF)](https://docs.bizpilot.ai)
+```
+
+---
+
